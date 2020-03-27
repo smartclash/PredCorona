@@ -123,7 +123,7 @@
             <div class="card-content">
                 <div class="columns">
                     <div class="column is-8 has-text-centered">
-                        <span class="title is-size-4">Enter number of days for which you want to predict the corona
+                        <span class="subtitle is-size-4">Enter number of days for which you want to predict the corona
                             cases</span>
                     </div>
                     <div class="column is-4">
