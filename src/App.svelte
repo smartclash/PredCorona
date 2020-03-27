@@ -10,6 +10,7 @@
     let thePredictCanvas;
     let theChart;
     let thePredictChart;
+    let theInputField;
 
     let predictForDays = 10;
     let thePredictedDates;
@@ -52,6 +53,17 @@
         }
 
         return listOfCases;
+    }
+
+    function hideKeyboard() {
+        // element.attr('readonly', 'readonly'); // Force keyboard to hide on input field.
+        // element.attr('disabled', 'true'); // Force keyboard to hide on textarea field.
+        // setTimeout(() => {
+        //     element.blur();
+        //     element.removeAttr('readonly');
+        //     element.removeAttr('disabled');
+        // }, 100);
+        document.activeElement.blur();
     }
 
     function predictDeathsWhenCase(cases) {
@@ -127,7 +139,7 @@
                             cases</span>
                     </div>
                     <div class="column is-4">
-                        <input type="number" min="5" max="60" class="input" bind:value={predictForDays}>
+                        <input type="number" min="5" max="60" class="input" bind:value={predictForDays} bind:this={theInputField} on:enter={hideKeyboard}>
                     </div>
                 </div>
             </div>
