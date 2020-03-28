@@ -1,93 +1,45 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# PredCorona
+
+***A simple corona cases predictor***
 
 ---
 
-# svelte app
+Hi, I am [AlphaMan](https://twitter.com/@xXAlphaManXx). I made this small website in two hours or less just because I was bored of quarantine days. This whole website is made using Javascript and has no backend powering it.
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+The prediction is based on the formula `y = ab^x` where `a` will be the case count of present day, `b` will be the growth factor and `x` will be the number of day from today for when you want to predict.
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+Since this formula can plot only exponential growth, it cannot really find out when the growth stalls and flattens because we are practicing various measures such as Social Distancing, Staying at Home etc. If you would love to learn more, I recommend checking out these videos
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
+* [3blue1brown - Exponential Growth and Epidemics](https://www.youtube.com/watch?v=Kas0tIxDvrg)
+* [MinutePhysics - How to tell if we are beating COVID-19](https://www.youtube.com/watch?v=54XLXg4fYsc)
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+## Special thanks
 
+This website was made possible due to these following libraries and APIs.
 
-## Get started
+### Libraries
 
-Install the dependencies...
+* [Svelte](https://svelte.dev/) - The whole frontend
+* [Moment.js](https://momentjs.com/) - Handling Dates
+* [Chart.js](https://chartjs.org/) - Drawing charts
+* [Bulma CSS](https://bulma.io/) - Design Framework
 
-```bash
-cd svelte-app
-npm install
-```
+### API
 
-...then start [Rollup](https://rollupjs.org):
+* [COVID-19 API](https://github.com/amodm/api-covid19-in) by [Amod](https://github.com/amodm/)
 
-```bash
-npm run dev
-```
+## Good news
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+This website, itself is open source. You can make changes or suggest them at the official Github repository
 
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
+* [PredCorona](https://github.com/smartclash/PredCorona) - Github
 
+You can follow me or contact me through social media. I will link them down too.
 
-## Building and running in production mode
+* [Twitter](https://twitter.com/@xXAlphaManXx)
+* [Instagram](https://instagram.com/_xalphamanx_)
 
-To create an optimised version of the app:
+And also consider checkout out my other website
 
-```bash
-npm run build
-```
-
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
-
-
-## Single-page app mode
-
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
-```
-
-
-## Deploying to the web
-
-### With [now](https://zeit.co/now)
-
-Install `now` if you haven't already:
-
-```bash
-npm install -g now
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-now deploy --name my-project
-```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
+* [My Portfolio](https://alphaman.me/)
+* [My Blog](https://blog.alphaman.me/)
