@@ -226,7 +226,7 @@
                     <p class="subtitle">Good news</p>
                     <p>This website, itself is open source. You can make changes or suggest them at the official Github repository</p>
                     <ul>
-                        <li><a href="https://github/smartclash/PredCorona" tagret="_blank">PredCorona</a> - Github</li>
+                        <li><a href="https://github.com/smartclash/PredCorona" tagret="_blank">PredCorona</a> - Github</li>
                     </ul>
                     <p>You can follow me or contact me through social media. I will link them down too.</p>
                     <ul>
