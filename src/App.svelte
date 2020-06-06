@@ -159,34 +159,6 @@
             </div>
         </div>
     </section>
-    <!-- <section style="padding-top: 45px">
-        <div class="columns">
-            <div class="column is-4">
-                <div class="card has-background-danger">
-                    <div class="card-content has-text-white">
-                        <p class="is-size-4">Predicted total death cases</p>
-                        <small>still under development</small>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-4">
-                <div class="card has-background-primary">
-                    <div class="card-content has-text-white">
-                        <p class="is-size-4">Predicted total recovered cases</p>
-                        <small>still under development</small>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-4">
-                <div class="card has-background-warning">
-                    <div class="card-content">
-                        <p class="is-size-4">Predicted total affected cases</p>
-                        <small>still under development</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <section style="padding-top: 45px; padding-bottom: 60px;">
         <div class="card">
             <div class="card-content">
